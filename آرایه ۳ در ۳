@@ -1,0 +1,29 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[,] arr = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        Console.Write("Enter a number to search: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+        bool found = false;
+
+        for (int i = 0; i < array(0); i++)
+        {
+            for (int j = 0; j < array(1); j++)
+            {
+                if (arr[i,j] == num)
+                {
+                    Console.WriteLine("Number found at position [{0},{1}]", i+1,j+1);
+                    found = true;
+                }
+            }
+        }
+
+        if (!found)
+            Console.WriteLine("Number not found in the array.");
+
+        Console.ReadKey();
+    }
+}
